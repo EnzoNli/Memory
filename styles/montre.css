@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+}
+
+#video_bg{
+    position: fixed;
+}
+
+
+
+
+
+
+.memory-card{
+    width: 45vw;
+    height: 90vh;
+    margin-left: 10vw;
+    top: 5vh;
+    position: relative;
+    max-height: 50%;
+    background-color: black;
+}
+
+.ligne{
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 2vh;
+}
+
+.ligne img{
+    width: 16vh;
+    height: 8vw;
+    border: 4px solid rgb(255, 193, 21);
+    border-radius: 20px;
+    user-select: none;
+}
+
+@font-face {
+    font-family: amongus;
+    src: url("../font/amongus.ttf");
+}
+
+
+
+#timer{
+    font-family: amongus;
+    font-size: 10vh;
+    position: absolute;
+    user-select: none;
+    left: 75vw;
+    top: 3vh;
+    color: rgb(124, 24, 24);
+}
+
+
+
+
+
+#tr{
+    font-family: amongus;
+    font-size: 10vh;
+    position: absolute;
+    user-select: none;
+    left: 50vw;
+    top: 3vh;
+    color: white;
+    white-space: nowrap;
+}
+
+
+
+#perdu, #gagne{
+    font-family: amongus;
+    font-size: 15vh;
+    position: absolute;
+    user-select: none;
+    left: 60vw;
+    top: 36vh;
+    color: red;
+    white-space: nowrap;
+    animation: zoom 2s ease infinite;
+    visibility: hidden;
+}
+
+#gagne{
+    left: 58vw;
+    color: rgb(0, 255, 98);
+}
+
+#rejouer, #rejouer_classement{
+    display: flex;
+    justify-content: center;
+    font-family: amongus;
+	font-size:5vh;
+    position: absolute;
+    user-select: none;
+	border-radius:16px;
+	border:3px solid #ffffff;
+	color:#ffffff;
+    padding:15px 25px;
+    visibility: hidden;
+}
+
+#rejouer{
+    width: 40vw;
+    left: 47.5vw;
+    top: 77vh;
+}
+
+#rejouer_classement{
+    width: 20vw;
+    position: fixed;
+    top: 85vh;
+    left: 50%;
+    margin-left: -10vw;
+}
+
+#rejouer:hover, #rejouer_classement:hover{
+    border:3px solid #0edf07;
+    color:#0edf07;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  
+  @keyframes cligno {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes color-change {
+    0% { color: rgb(0, 199, 0); }
+    50% { color: rgb(248, 205, 12); }
+    85% { color: rgb(202, 39, 39); }
+    100% { color: rgb(124, 24, 24); }
+  }
+
+  #name{
+    height: 10vh;
+    width: 40vw;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-family: amongus;
+    font-size: 7vh;
+    position: absolute;
+    left: 48vw;
+    top: 76vh;
+    border-radius:16px;
+	border:3px solid #ffffff;
+    padding:15px 25px;
+    visibility: hidden;
+}
+
+#name:focus{
+    outline: none;
+}
+
+#classement_coups{
+    left: 10vw;
+}
+
+#classement_tps{
+    right: 10vw;
+}
+
+#classement_coups, #classement_tps{
+    height: 10vh;
+    width: 30vw;
+    color: white;
+    font-family: amongus;
+    font-size: 7vh;
+    position: absolute;
+    top: 15vh;
+    border-radius:16px;
+	border:3px solid #ffffff;
+    padding:20px 25px;
+    text-align: center;
+    user-select: none;
+    visibility: hidden;
+}
+
+.places{
+    width: 3vw;
+    height: 5vh;
+    position: absolute;
+    left: 1.75vw;
+    margin-top: 0.75vh;
+}
+
+table{
+    position: absolute;
+}

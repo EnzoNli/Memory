@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Contre la montre</title>
+    <link rel="icon" href="../icon.png">
+    <link rel="stylesheet" href="../styles/montre.css">
+    <script src="../scripts/montre.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="video_bg">
+        <source src="../cards/video.mp4" type="video/mp4">
+    </video>
+
+    <table id="classement_coups">
+        <caption>Classement coups</caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Coups</th>
+            </tr>
+        </thead>
+        <tbody id="tbod_coups">
+        </tbody>
+    </table>
+
+    <table id="classement_tps">
+        <caption>Classement temps</caption>
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Temps</th>
+            </tr>
+        </thead>
+        <tbody id="tbod_tps">
+        </tbody>
+    </table>
+    
+    <div class="memory-card">
+        <div id="l0" class="ligne">
+            <img class="cartes" id="00" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="01" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="02" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="03" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="04" src="../cards/dos.PNG" alt="dos">
+        </div>
+
+        <div id="l1" class="ligne">
+            <img class="cartes" id="10" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="11" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="12" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="13" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="14" src="../cards/dos.PNG" alt="dos">
+        </div>
+
+        <div id="l2" class="ligne">
+            <img class="cartes" id="20" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="21" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="22" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="23" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="24" src="../cards/dos.PNG" alt="dos">
+        </div>
+
+        <div id="l3" class="ligne">
+            <img class="cartes" id="30" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="31" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="32" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="33" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="34" src="../cards/dos.PNG" alt="dos"> 
+        </div>
+
+        <div id="l4" class="ligne">
+            <img class="cartes" id="40" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="41" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="42" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="43" src="../cards/dos.PNG" alt="dos">
+            <img class="cartes" id="44" src="../cards/dos.PNG" alt="dos">
+        </div>
+        <p id="tr">Temps restant : </p><div id="timer"></div>
+        <p id="perdu">Perdu !</p>
+        <p id="gagne">Victoire !</p>
+        <p id="rejouer">Rejouer</p>
+        <p id="rejouer_classement">Rejouer</p>
+        <input type="text" id="name" name="name" autocomplete="off" placeholder="Entrez votre nom" required>
+    </div>
+    
+</body>
+</html>

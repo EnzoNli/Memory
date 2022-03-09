@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+body{
+    overflow: hidden;
+    background: black;
+}
+
+section{
+    position: relative;
+}
+
+@keyframes rotation1 {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes rotation2 {
+    from {
+      transform: rotate(359deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+#perso{
+    position: absolute;
+    width: 70px;
+    height: 100px;
+    user-select: none;
+}
+
+
+
+#video_bg{
+    position: fixed;
+}
+
+@font-face {
+    font-family: amongus;
+    src: url("../font/amongus.ttf");
+}
+
+
+#dtitre{
+    top: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: amongus;
+    font-size: 200px;
+    user-select: none;
+}
+
+#boutons{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#b1, #b2, #b3{
+	border-radius:16px;
+	border:3px solid #ffffff;
+	color:#ffffff;
+	font-family: amongus;
+	font-size:50px;
+	text-decoration:none;
+    padding:15px 25px;
+    user-select: none;
+}
+
+#b1{
+    top: 40%;
+}
+
+#b2{
+    top: 55%;
+}
+
+#b3{
+    top: 70%;
+}
+
+#b1:hover, #b2:hover, #b3:hover{
+    border:3px solid #0edf07;
+    color:#0edf07;
+}
+
+#author{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: amongus;
+    white-space: nowrap;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
